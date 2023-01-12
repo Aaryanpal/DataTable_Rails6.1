@@ -1,0 +1,1 @@
+web: rake db:migrate && rails webpacker:install && yarn install && bin/rails server -b 0.0.0.0 -p ${PORT} && whenever --update-crontab

@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Products in Rails v6.1</h1>
+
+<table id="products-datatable" class="table table-striped" style="width:100%" data-source="<%= products_path(format: :json) %>">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Categories</th>
+      <th>Current price</th>
+      <th>Actual price</th>
+      <th>Discount</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+<br>
+
+<%= link_to 'New Product', new_product_path %>
